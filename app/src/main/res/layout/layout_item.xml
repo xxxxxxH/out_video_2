@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:id="@+id/item_img_root"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img_bg"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_img_root"
+        android:layout_alignBottom="@+id/item_img_root"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/item_img_root"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="1111111111111"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_tv_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="1111111111111"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/menu" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
